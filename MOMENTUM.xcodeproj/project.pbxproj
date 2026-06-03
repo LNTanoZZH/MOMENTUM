@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A100000001 /* MomentumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000001; };
+		A100000002 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000002; };
+		A100000003 /* ColorTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000003; };
+		A100000004 /* TypographyTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000004; };
+		A100000005 /* ShadowTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000005; };
+		A100000006 /* MotionTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000006; };
+		A100000007 /* GlassCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000007; };
+		A100000008 /* TactileButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000008; };
+		A100000009 /* SliderRail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000009; };
+		A100000010 /* ColorChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000010; };
+		A100000011 /* ToolPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000011; };
+		A100000012 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000012; };
+		A100000013 /* EditProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000013; };
+		A100000014 /* ColorCardConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000014; };
+		A100000015 /* DotModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000015; };
+		A100000016 /* EditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000016; };
+		A100000017 /* ColorCardEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000017; };
+		A100000018 /* EditorCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000018; };
+		A100000019 /* LivePhotoPreviewOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000019; };
+		A100000020 /* LayoutToolSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000020; };
+		A100000021 /* ColorToolSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000021; };
+		A100000022 /* FillToolSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000022; };
+		A100000023 /* TextToolSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000023; };
+		A100000024 /* DotToolSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000024; };
+		A100000025 /* GridColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000025; };
+		A100000026 /* SpectrumColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000026; };
+		A100000027 /* RGBColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000027; };
+		A100000028 /* ExportRitualView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000028; };
+		A100000029 /* ColorExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000029; };
+		A100000030 /* LayoutCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000030; };
+		A100000031 /* FillRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000031; };
+		A100000032 /* DotRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000032; };
+		A100000033 /* ImageComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000033; };
+		A100000034 /* FeedbackService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000034; };
+		A100000035 /* PhotoImportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000035; };
+		A100000036 /* LivePhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000036; };
+		A100000037 /* ExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000037; };
+		A100000038 /* UndoRedoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000038; };
+		A100000039 /* WorkCollectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000039; };
+		A100000041 /* ImageSessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000042; };
+		A100000040 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A200000040; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A200000001 /* MomentumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentumApp.swift; sourceTree = "<group>"; };
+		A200000002 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		A200000003 /* ColorTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTokens.swift; sourceTree = "<group>"; };
+		A200000004 /* TypographyTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypographyTokens.swift; sourceTree = "<group>"; };
+		A200000005 /* ShadowTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowTokens.swift; sourceTree = "<group>"; };
+		A200000006 /* MotionTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionTokens.swift; sourceTree = "<group>"; };
+		A200000007 /* GlassCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassCard.swift; sourceTree = "<group>"; };
+		A200000008 /* TactileButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TactileButton.swift; sourceTree = "<group>"; };
+		A200000009 /* SliderRail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderRail.swift; sourceTree = "<group>"; };
+		A200000010 /* ColorChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorChip.swift; sourceTree = "<group>"; };
+		A200000011 /* ToolPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolPanel.swift; sourceTree = "<group>"; };
+		A200000012 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A200000013 /* EditProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProject.swift; sourceTree = "<group>"; };
+		A200000014 /* ColorCardConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCardConfig.swift; sourceTree = "<group>"; };
+		A200000015 /* DotModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotModels.swift; sourceTree = "<group>"; };
+		A200000016 /* EditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorViewModel.swift; sourceTree = "<group>"; };
+		A200000017 /* ColorCardEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCardEditorView.swift; sourceTree = "<group>"; };
+		A200000018 /* EditorCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorCanvasView.swift; sourceTree = "<group>"; };
+		A200000019 /* LivePhotoPreviewOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePhotoPreviewOverlay.swift; sourceTree = "<group>"; };
+		A200000020 /* LayoutToolSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutToolSheet.swift; sourceTree = "<group>"; };
+		A200000021 /* ColorToolSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorToolSheet.swift; sourceTree = "<group>"; };
+		A200000022 /* FillToolSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillToolSheet.swift; sourceTree = "<group>"; };
+		A200000023 /* TextToolSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToolSheet.swift; sourceTree = "<group>"; };
+		A200000024 /* DotToolSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotToolSheet.swift; sourceTree = "<group>"; };
+		A200000025 /* GridColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridColorPicker.swift; sourceTree = "<group>"; };
+		A200000026 /* SpectrumColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectrumColorPicker.swift; sourceTree = "<group>"; };
+		A200000027 /* RGBColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBColorPicker.swift; sourceTree = "<group>"; };
+		A200000028 /* ExportRitualView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportRitualView.swift; sourceTree = "<group>"; };
+		A200000029 /* ColorExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtractor.swift; sourceTree = "<group>"; };
+		A200000030 /* LayoutCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutCalculator.swift; sourceTree = "<group>"; };
+		A200000031 /* FillRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillRenderer.swift; sourceTree = "<group>"; };
+		A200000032 /* DotRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotRenderer.swift; sourceTree = "<group>"; };
+		A200000033 /* ImageComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageComposer.swift; sourceTree = "<group>"; };
+		A200000034 /* FeedbackService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackService.swift; sourceTree = "<group>"; };
+		A200000035 /* PhotoImportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoImportService.swift; sourceTree = "<group>"; };
+		A200000036 /* LivePhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePhotoService.swift; sourceTree = "<group>"; };
+		A200000037 /* ExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportService.swift; sourceTree = "<group>"; };
+		A200000038 /* UndoRedoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndoRedoManager.swift; sourceTree = "<group>"; };
+		A200000039 /* WorkCollectionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkCollectionItem.swift; sourceTree = "<group>"; };
+		A200000040 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A200000042 /* ImageSessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSessionStore.swift; sourceTree = "<group>"; };
+		A200000041 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A200000099 /* MOMENTUM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MOMENTUM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A300000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A400000001 = {
+			isa = PBXGroup;
+			children = (
+				A400000002 /* MOMENTUM */,
+				A400000099 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A400000002 /* MOMENTUM */ = {
+			isa = PBXGroup;
+			children = (
+				A400000003 /* App */,
+				A400000004 /* DesignSystem */,
+				A400000005 /* Features */,
+				A400000006 /* Engine */,
+				A400000007 /* Services */,
+				A400000008 /* Resources */,
+				A200000041 /* Info.plist */,
+			);
+			path = MOMENTUM;
+			sourceTree = "<group>";
+		};
+		A400000003 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A200000001 /* MomentumApp.swift */,
+				A200000002 /* AppRouter.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A400000004 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				A400000010 /* Tokens */,
+				A400000011 /* Components */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		A400000005 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				A400000012 /* Home */,
+				A400000013 /* ColorCard */,
+				A400000014 /* Export */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		A400000006 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				A200000029 /* ColorExtractor.swift */,
+				A200000030 /* LayoutCalculator.swift */,
+				A200000031 /* FillRenderer.swift */,
+				A200000032 /* DotRenderer.swift */,
+				A200000033 /* ImageComposer.swift */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		A400000007 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A200000034 /* FeedbackService.swift */,
+				A200000035 /* PhotoImportService.swift */,
+				A200000036 /* LivePhotoService.swift */,
+				A200000037 /* ExportService.swift */,
+				A200000038 /* UndoRedoManager.swift */,
+				A200000039 /* WorkCollectionItem.swift */,
+				A200000042 /* ImageSessionStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A400000008 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A200000040 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A400000010 /* Tokens */ = {
+			isa = PBXGroup;
+			children = (
+				A200000003 /* ColorTokens.swift */,
+				A200000004 /* TypographyTokens.swift */,
+				A200000005 /* ShadowTokens.swift */,
+				A200000006 /* MotionTokens.swift */,
+			);
+			path = Tokens;
+			sourceTree = "<group>";
+		};
+		A400000011 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A200000007 /* GlassCard.swift */,
+				A200000008 /* TactileButton.swift */,
+				A200000009 /* SliderRail.swift */,
+				A200000010 /* ColorChip.swift */,
+				A200000011 /* ToolPanel.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A400000012 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A200000012 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A400000013 /* ColorCard */ = {
+			isa = PBXGroup;
+			children = (
+				A400000015 /* Models */,
+				A400000016 /* ViewModels */,
+				A400000017 /* Views */,
+			);
+			path = ColorCard;
+			sourceTree = "<group>";
+		};
+		A400000014 /* Export */ = {
+			isa = PBXGroup;
+			children = (
+				A200000028 /* ExportRitualView.swift */,
+			);
+			path = Export;
+			sourceTree = "<group>";
+		};
+		A400000015 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A200000013 /* EditProject.swift */,
+				A200000014 /* ColorCardConfig.swift */,
+				A200000015 /* DotModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A400000016 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A200000016 /* EditorViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A400000017 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A200000017 /* ColorCardEditorView.swift */,
+				A200000018 /* EditorCanvasView.swift */,
+				A200000019 /* LivePhotoPreviewOverlay.swift */,
+				A400000018 /* ToolSheets */,
+				A400000019 /* ColorPickers */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A400000018 /* ToolSheets */ = {
+			isa = PBXGroup;
+			children = (
+				A200000020 /* LayoutToolSheet.swift */,
+				A200000021 /* ColorToolSheet.swift */,
+				A200000022 /* FillToolSheet.swift */,
+				A200000023 /* TextToolSheet.swift */,
+				A200000024 /* DotToolSheet.swift */,
+			);
+			path = ToolSheets;
+			sourceTree = "<group>";
+		};
+		A400000019 /* ColorPickers */ = {
+			isa = PBXGroup;
+			children = (
+				A200000025 /* GridColorPicker.swift */,
+				A200000026 /* SpectrumColorPicker.swift */,
+				A200000027 /* RGBColorPicker.swift */,
+			);
+			path = ColorPickers;
+			sourceTree = "<group>";
+		};
+		A400000099 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A200000099 /* MOMENTUM.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A500000001 /* MOMENTUM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A700000003 /* Build configuration list for PBXNativeTarget "MOMENTUM" */;
+			buildPhases = (
+				A600000001 /* Sources */,
+				A300000001 /* Frameworks */,
+				A600000002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MOMENTUM;
+			productName = MOMENTUM;
+			productReference = A200000099 /* MOMENTUM.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A800000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A500000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = A700000001 /* Build configuration list for PBXProject "MOMENTUM" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = A400000001;
+			productRefGroup = A400000099 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A500000001 /* MOMENTUM */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A600000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A100000040 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A600000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A100000001 /* MomentumApp.swift in Sources */,
+				A100000002 /* AppRouter.swift in Sources */,
+				A100000003 /* ColorTokens.swift in Sources */,
+				A100000004 /* TypographyTokens.swift in Sources */,
+				A100000005 /* ShadowTokens.swift in Sources */,
+				A100000006 /* MotionTokens.swift in Sources */,
+				A100000007 /* GlassCard.swift in Sources */,
+				A100000008 /* TactileButton.swift in Sources */,
+				A100000009 /* SliderRail.swift in Sources */,
+				A100000010 /* ColorChip.swift in Sources */,
+				A100000011 /* ToolPanel.swift in Sources */,
+				A100000012 /* HomeView.swift in Sources */,
+				A100000013 /* EditProject.swift in Sources */,
+				A100000014 /* ColorCardConfig.swift in Sources */,
+				A100000015 /* DotModels.swift in Sources */,
+				A100000016 /* EditorViewModel.swift in Sources */,
+				A100000017 /* ColorCardEditorView.swift in Sources */,
+				A100000018 /* EditorCanvasView.swift in Sources */,
+				A100000019 /* LivePhotoPreviewOverlay.swift in Sources */,
+				A100000020 /* LayoutToolSheet.swift in Sources */,
+				A100000021 /* ColorToolSheet.swift in Sources */,
+				A100000022 /* FillToolSheet.swift in Sources */,
+				A100000023 /* TextToolSheet.swift in Sources */,
+				A100000024 /* DotToolSheet.swift in Sources */,
+				A100000025 /* GridColorPicker.swift in Sources */,
+				A100000026 /* SpectrumColorPicker.swift in Sources */,
+				A100000027 /* RGBColorPicker.swift in Sources */,
+				A100000028 /* ExportRitualView.swift in Sources */,
+				A100000029 /* ColorExtractor.swift in Sources */,
+				A100000030 /* LayoutCalculator.swift in Sources */,
+				A100000031 /* FillRenderer.swift in Sources */,
+				A100000032 /* DotRenderer.swift in Sources */,
+				A100000033 /* ImageComposer.swift in Sources */,
+				A100000034 /* FeedbackService.swift in Sources */,
+				A100000035 /* PhotoImportService.swift in Sources */,
+				A100000036 /* LivePhotoService.swift in Sources */,
+				A100000037 /* ExportService.swift in Sources */,
+				A100000038 /* UndoRedoManager.swift in Sources */,
+				A100000039 /* WorkCollectionItem.swift in Sources */,
+				A100000041 /* ImageSessionStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A900000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_PREVIEWS = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A900000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A900000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MOMENTUM/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.momentum.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A900000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MOMENTUM/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.momentum.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A700000001 /* Build configuration list for PBXProject "MOMENTUM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A900000001 /* Debug */,
+				A900000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A700000003 /* Build configuration list for PBXNativeTarget "MOMENTUM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A900000003 /* Debug */,
+				A900000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A800000001 /* Project object */;
+}
