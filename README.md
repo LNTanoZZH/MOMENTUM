@@ -16,7 +16,7 @@ git init
 git add .
 git commit -m "Initial commit: MOMENTUM MVP"
 git branch -M main
-git remote add origin https://github.com/<你的用户名>/MOMENTUM.git
+git remote add origin https://github.com/LNTanoZZH/MOMENTUM.git
 git push -u origin main
 ```
 
