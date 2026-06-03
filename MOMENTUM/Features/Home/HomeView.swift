@@ -121,7 +121,7 @@ struct HomeView: View {
 
     private func importPhoto(_ item: PhotosPickerItem) {
         isImporting = true
-        Task {
+        Task { @MainActor in
             do {
                 let result = try await PhotoImportService().loadImage(from: item)
                 FeedbackService.shared.play(.shutter)

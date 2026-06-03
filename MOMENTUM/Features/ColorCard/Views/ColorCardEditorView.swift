@@ -148,7 +148,7 @@ struct ColorCardEditorView: View {
 
     private func exportWork() {
         isExporting = true
-        Task {
+        Task { @MainActor in
             if let image = await viewModel.renderFullResolution() {
                 let exportID = ImageSessionStore.shared.store(image: image)
                 navigationPath.append(ExportRoute(imageID: exportID, projectID: viewModel.project.id))
