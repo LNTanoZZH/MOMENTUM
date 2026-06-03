@@ -21,7 +21,3 @@ final class LivePhotoService {
         }
     }
 }
-
-#if canImport(PhotosUI)
-import PhotosUI
-#endif

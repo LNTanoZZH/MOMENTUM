@@ -27,4 +27,5 @@ Package.resolved
 
 # Secrets
 *.p12
-*.mobileprovision
+*.zip
+xcodebuild-log-extracted/
