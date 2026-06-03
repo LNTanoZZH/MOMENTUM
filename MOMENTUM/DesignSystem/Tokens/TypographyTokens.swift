@@ -16,16 +16,8 @@ enum MomentumTypography {
     ]
 }
 
-struct CardFontStyle: Identifiable, Hashable {
+struct CardFontStyle: Identifiable {
     let id = UUID()
     let name: String
     let font: Font
-
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(name)
-    }
-
-    static func == (lhs: CardFontStyle, rhs: CardFontStyle) -> Bool {
-        lhs.name == rhs.name
-    }
 }

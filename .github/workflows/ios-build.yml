@@ -54,6 +54,12 @@ jobs:
           grep -E "error:" xcodebuild.log || true
           echo "=== Last 40 lines ==="
           tail -40 xcodebuild.log || true
+          if [ -n "$GITHUB_STEP_SUMMARY" ]; then
+            echo "## xcodebuild errors" >> "$GITHUB_STEP_SUMMARY"
+            echo '```' >> "$GITHUB_STEP_SUMMARY"
+            grep -E "error:" xcodebuild.log >> "$GITHUB_STEP_SUMMARY" || echo "(no error: lines found)" >> "$GITHUB_STEP_SUMMARY"
+            echo '```' >> "$GITHUB_STEP_SUMMARY"
+          fi
 
       - name: Upload build log on failure
         if: failure()

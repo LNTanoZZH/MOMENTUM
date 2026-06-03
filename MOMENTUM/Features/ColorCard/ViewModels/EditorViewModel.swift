@@ -326,20 +326,16 @@ final class EditorViewModel: ObservableObject {
     }
 
     func renderFullResolution() async -> UIImage? {
-        await Task.detached(priority: .userInitiated) { [project] in
-            ImageComposer().compose(project: project, previewScale: 1.0)
-        }.value
+        ImageComposer().compose(project: project, previewScale: 1.0)
     }
 
     private func scheduleRender(previewScale: CGFloat) {
         renderTask?.cancel()
-        renderTask = Task {
+        renderTask = Task { @MainActor in
             isRendering = true
             try? await Task.sleep(nanoseconds: 80_000_000)
             guard !Task.isCancelled else { return }
-            let image = await Task.detached(priority: .userInitiated) { [project, previewScale] in
-                ImageComposer().compose(project: project, previewScale: previewScale)
-            }.value
+            let image = ImageComposer().compose(project: project, previewScale: previewScale)
             guard !Task.isCancelled else { return }
             renderedPreview = image
             isRendering = false
