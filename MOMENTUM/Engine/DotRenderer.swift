@@ -74,7 +74,7 @@ struct DotRenderer {
                 x: dot.center.x * layout.canvasSize.width,
                 y: dot.center.y * layout.canvasSize.height
             )
-            let radius = dot.size * min(layout.canvasSize.width, layout.canvasSize.height)
+            let radius = CGFloat(dot.size) * min(layout.canvasSize.width, layout.canvasSize.height)
             let rect = CGRect(
                 x: canvasPoint.x - radius / 2,
                 y: canvasPoint.y - radius / 2,

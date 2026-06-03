@@ -58,11 +58,17 @@ struct FillRenderer {
         size: CGSize
     ) -> CIImage? {
         let points = direction.points
-        let filter = CIFilter.linearGradient()
-        filter.color0 = CIColor(color: primary.uiColor)
-        filter.color1 = CIColor(color: secondary.uiColor)
-        filter.point0 = CGPoint(x: points.start.x * size.width, y: points.start.y * size.height)
-        filter.point1 = CGPoint(x: points.end.x * size.width, y: points.end.y * size.height)
+        guard let filter = CIFilter(name: "CILinearGradient") else { return nil }
+        filter.setValue(CIColor(cgColor: primary.uiColor.cgColor), forKey: "inputColor0")
+        filter.setValue(CIColor(cgColor: secondary.uiColor.cgColor), forKey: "inputColor1")
+        filter.setValue(CIVector(cgPoint: CGPoint(
+            x: points.start.x * size.width,
+            y: points.start.y * size.height
+        )), forKey: "inputPoint0")
+        filter.setValue(CIVector(cgPoint: CGPoint(
+            x: points.end.x * size.width,
+            y: points.end.y * size.height
+        )), forKey: "inputPoint1")
         return filter.outputImage?.cropped(to: CGRect(origin: .zero, size: size))
     }
 

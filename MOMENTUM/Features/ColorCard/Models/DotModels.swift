@@ -27,12 +27,12 @@ enum DotShape: String, CaseIterable, Codable, Identifiable {
     }
 }
 
-enum DotRegion: String, Codable {
+enum DotRegion: String, Codable, Hashable {
     case onPhoto
     case onCard
 }
 
-enum DotGenerationMode: String, CaseIterable, Codable, Identifiable {
+enum DotGenerationMode: String, CaseIterable, Codable, Identifiable, Hashable {
     case random, manual, path
 
     var id: String { rawValue }
@@ -46,16 +46,42 @@ enum DotGenerationMode: String, CaseIterable, Codable, Identifiable {
     }
 }
 
-struct DotElement: Identifiable, Codable, Hashable {
-    var id: UUID = UUID()
+struct DotElement: Identifiable, Hashable {
+    var id: UUID
     var shape: DotShape
-    var center: CGPoint
-    var size: CGFloat
+    var centerX: Double
+    var centerY: Double
+    var size: Double
     var rotation: Double
     var region: DotRegion
+
+    var center: CGPoint {
+        get { CGPoint(x: centerX, y: centerY) }
+        set {
+            centerX = Double(newValue.x)
+            centerY = Double(newValue.y)
+        }
+    }
+
+    init(
+        id: UUID = UUID(),
+        shape: DotShape,
+        center: CGPoint,
+        size: CGFloat,
+        rotation: Double,
+        region: DotRegion
+    ) {
+        self.id = id
+        self.shape = shape
+        self.centerX = Double(center.x)
+        self.centerY = Double(center.y)
+        self.size = Double(size)
+        self.rotation = rotation
+        self.region = region
+    }
 }
 
-struct DotLayer: Codable, Hashable {
+struct DotLayer: Hashable {
     var dots: [DotElement]
     var generationMode: DotGenerationMode
     var randomSeed: UInt64
@@ -80,17 +106,5 @@ struct DotLayer: Codable, Hashable {
         self.baseSize = baseSize
         self.sizeVariance = sizeVariance
         self.selectedShape = selectedShape
-    }
-}
-
-struct CodablePoint: Codable, Hashable {
-    var x: Double
-    var y: Double
-
-    var cgPoint: CGPoint { CGPoint(x: x, y: y) }
-
-    init(_ point: CGPoint) {
-        x = Double(point.x)
-        y = Double(point.y)
     }
 }

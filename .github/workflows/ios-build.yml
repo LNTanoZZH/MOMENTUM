@@ -47,6 +47,14 @@ jobs:
             CODE_SIGNING_REQUIRED=NO \
             build 2>&1 | tee xcodebuild.log
 
+      - name: Print compile errors
+        if: failure()
+        run: |
+          echo "=== Compile errors ==="
+          grep -E "error:" xcodebuild.log || true
+          echo "=== Last 40 lines ==="
+          tail -40 xcodebuild.log || true
+
       - name: Upload build log on failure
         if: failure()
         uses: actions/upload-artifact@v4

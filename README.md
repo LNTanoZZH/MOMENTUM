@@ -1,6 +1,6 @@
 # MOMENTUM
 
-[![iOS Build](https://github.com/<你的用户名>/MOMENTUM/actions/workflows/ios-build.yml/badge.svg)](https://github.com/<你的用户名>/MOMENTUM/actions/workflows/ios-build.yml)
+[![iOS Build](https://github.com/LNTanoZZH/MOMENTUM/actions/workflows/ios-build.yml/badge.svg)](https://github.com/LNTanoZZH/MOMENTUM/actions/workflows/ios-build.yml)
 
 轻创作图像 App — iOS 17+ / SwiftUI
 

@@ -87,7 +87,7 @@ enum StripeDirection: String, CaseIterable, Codable, Identifiable {
     }
 }
 
-struct CardText: Codable, Hashable {
+struct CardText: Hashable {
     var content: String
     var fontStyleName: String
     var color: PaletteColor
@@ -125,7 +125,7 @@ enum TextAlignmentOption: String, CaseIterable, Codable, Identifiable {
     }
 }
 
-struct ColorCardConfig: Codable, Hashable {
+struct ColorCardConfig: Hashable {
     var placement: CardPlacement
     var cardSizeRatio: CGFloat
     var fill: FillStyle
