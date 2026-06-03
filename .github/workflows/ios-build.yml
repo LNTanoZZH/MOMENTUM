@@ -3,6 +3,8 @@ name: iOS Build
 on:
   push:
     branches: [main, master]
+    paths-ignore:
+      - 'ci-debug/**'
   pull_request:
     branches: [main, master]
   workflow_dispatch:
@@ -10,6 +12,9 @@ on:
 concurrency:
   group: ios-build-${{ github.ref }}
   cancel-in-progress: true
+
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -51,15 +56,27 @@ jobs:
         if: failure()
         run: |
           echo "=== Compile errors ==="
-          grep -E "error:" xcodebuild.log || true
-          echo "=== Last 40 lines ==="
-          tail -40 xcodebuild.log || true
+          grep -E "error:|fatal error:" xcodebuild.log || true
+          echo "=== Last 60 lines ==="
+          tail -60 xcodebuild.log || true
           if [ -n "$GITHUB_STEP_SUMMARY" ]; then
             echo "## xcodebuild errors" >> "$GITHUB_STEP_SUMMARY"
             echo '```' >> "$GITHUB_STEP_SUMMARY"
-            grep -E "error:" xcodebuild.log >> "$GITHUB_STEP_SUMMARY" || echo "(no error: lines found)" >> "$GITHUB_STEP_SUMMARY"
+            grep -E "error:|fatal error:" xcodebuild.log >> "$GITHUB_STEP_SUMMARY" || echo "(no error lines found)" >> "$GITHUB_STEP_SUMMARY"
             echo '```' >> "$GITHUB_STEP_SUMMARY"
           fi
+
+      - name: Publish CI log to repository
+        if: failure()
+        run: |
+          mkdir -p ci-debug
+          cp xcodebuild.log ci-debug/last-xcodebuild.log
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add ci-debug/last-xcodebuild.log
+          git diff --staged --quiet && exit 0
+          git commit -m "chore: update CI debug log [skip ci]"
+          git push
 
       - name: Upload build log on failure
         if: failure()
