@@ -6,15 +6,10 @@ final class LivePhotoService {
 
     func fetchLivePhoto(identifier: String, targetSize: CGSize) async -> PHLivePhoto? {
         await withCheckedContinuation { continuation in
-            let options = PHLivePhotoRequestOptions()
-            options.deliveryMode = .highQualityFormat
-            options.isNetworkAccessAllowed = true
-
             PHLivePhoto.request(
                 withLocalIdentifier: identifier,
                 targetSize: targetSize,
-                contentMode: .aspectFit,
-                options: options
+                contentMode: .aspectFit
             ) { livePhoto, _ in
                 continuation.resume(returning: livePhoto)
             }

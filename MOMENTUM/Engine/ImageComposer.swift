@@ -109,7 +109,7 @@ struct ImageComposer {
 
         let font = fontForStyle(text.fontStyleName, size: 22)
         let paragraph = NSMutableParagraphStyle()
-        paragraph.alignment = text.nsAlignment
+        paragraph.alignment = text.alignment.nsAlignment
         paragraph.lineBreakMode = .byWordWrapping
 
         let attrs: [NSAttributedString.Key: Any] = [
